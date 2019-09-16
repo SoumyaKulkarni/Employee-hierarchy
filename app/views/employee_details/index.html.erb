@@ -1,0 +1,9 @@
+
+<%= form_for(@employee, as: :employee, url: "/add", remote: true, method: "get") do |e|%>
+  <lable> name</lable><%= e.text_field :name %><br>
+  <lable> role</lable><%= e.select :role, options_for_select("hi") %><br>
+  <lable> Salary</lable><%= e.text_field :salary %><br>
+  <lable> Rating</lable><%= e.text_field :rating %><br>
+
+  
+<% end %>
